@@ -1,0 +1,2 @@
+bool homing
+float64 current_coordinate

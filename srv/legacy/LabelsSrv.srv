@@ -1,0 +1,7 @@
+string folder_name
+float32[] x_coords
+float32[] y_coords
+float32[] z_angle
+bool[] label
+---
+bool ack

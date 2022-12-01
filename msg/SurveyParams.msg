@@ -1,0 +1,9 @@
+bool set
+string type
+float32 x_start
+float32 y_start
+float32 x_end
+float32 y_end
+int16 points
+int16 points_x
+int16 points_y

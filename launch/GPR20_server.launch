@@ -1,0 +1,12 @@
+<launch>
+    <!-- Launch VNA data acquisition node -->
+    <node name="gpr20_vna_acquisition_node" pkg="gpr20_vna_acquisition" type="gpr20_vna_acquisition_node" output="screen" />
+
+    <!-- Launch data processing node -->
+    <node name="gpr20_data_processing_node" pkg="gpr20_data_processing" type="gpr20_data_processing_node" output="screen" />
+
+    <!-- Launch main control node -->
+    <node name="gpr20_control_node" pkg="gpr20_control" type="gpr20_control_node" output="screen" />
+
+
+</launch>

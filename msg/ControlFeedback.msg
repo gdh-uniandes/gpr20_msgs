@@ -1,0 +1,6 @@
+bool on_survey
+string status_message
+uint64 visited_points
+uint64 remaining_points
+float64 completion
+float64 remaining_time

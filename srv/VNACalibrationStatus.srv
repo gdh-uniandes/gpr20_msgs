@@ -1,0 +1,2 @@
+---
+uint8 calibration_status    # Integer value with calibration status

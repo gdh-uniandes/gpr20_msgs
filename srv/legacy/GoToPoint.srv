@@ -1,0 +1,5 @@
+float32 target_x_coord
+float32 target_y_coord
+float32 target_z_angle
+---
+bool assert

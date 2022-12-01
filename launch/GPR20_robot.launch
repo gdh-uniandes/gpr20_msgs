@@ -1,0 +1,50 @@
+<launch>
+
+    <!-- Launch the X axis driver node -->
+    <node name="axis_node" pkg="gpr20_axis_driver" ns="gpr20_x_axis" type="axis_node" output="screen">
+        <param name="dir_pin" type="int" value="13" />
+        <param name="step_pin" type="int" value="15" />
+        <param name="sensor_pin" type="int" value="16" />
+        <param name="step_size" type="double" value="0.01" />
+        <param name="min_step" type="double"   value="0.0015"/>
+        <param name="max_step" type="double"   value="0.0050" />
+        <param name="delta_step" type="double" value="0.0001"/>
+        <param name="min_coord" type="double" value="0" />
+        <param name="max_coord" type="double" value="650" />
+        <param name="type" type="str" value="LIN" />
+    </node>
+
+    <!-- Launch the Y axis driver node -->
+    <node name="axis_node" pkg="gpr20_axis_driver" ns="gpr20_y_axis" type="axis_node" output="screen">
+        <param name="dir_pin" type="int" value="37" />
+        <param name="step_pin" type="int" value="38" />
+        <param name="sensor_pin" type="int" value="40" />
+        <param name="step_size" type="double" value="0.01" />
+        <param name="min_step" type="double" value="0.0025"/>
+        <param name="max_step" type="double" value="0.005" />
+        <param name="delta_step" type="double" value="0.0001"/>
+        <param name="min_coord" type="double" value="0" />
+        <param name="max_coord" type="double" value="800" />
+        <param name="type" type="str" value="LIN" />
+    </node>
+    
+    <!-- Launch the Z axis driver node -->
+    <node name="axis_node" pkg="gpr20_axis_driver" ns="gpr20_z_axis" type="axis_node" output="screen">
+        <param name="dir_pin" type="int" value="11" />
+        <param name="step_pin" type="int" value="12" />
+        <param name="sensor_pin" type="int" value="-1" />
+        <param name="step_size" type="double" value="1.8" />
+        <param name="min_step" type="double" value="0.01"/>
+        <param name="max_step" type="double" value="0.025" />
+        <param name="delta_step" type="double" value="0.005"/>
+        <param name="min_coord" type="double" value="-90" />
+        <param name="max_coord" type="double" value="90" />
+        <param name="type" type="str" value="ROT" />
+    </node>
+
+    <!-- Launch the Z axis driver node -->
+    <!-- <node name="height_node" pkg="gpr20_height_sensor" type="height_node" output="screen" /> -->
+    
+    <node name="gpr20_user_interface_node" pkg="gpr20_user_interface" type="gpr20_user_interface_node" output="screen" />
+
+</launch>

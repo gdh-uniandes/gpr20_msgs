@@ -1,0 +1,3 @@
+---
+bool status         # Flag to indicate if valid data is present
+string freq_data    # String with the VNA response value. Empty if data not valid

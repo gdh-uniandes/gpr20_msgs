@@ -1,0 +1,5 @@
+float32 freq_start  # Frequency start value
+float32 freq_stop   # Frequency stop value
+int32 freq_points   # Frequency points value
+---
+bool result         # Status response

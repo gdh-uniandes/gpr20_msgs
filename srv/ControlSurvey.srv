@@ -1,0 +1,13 @@
+string vna_ip
+float64 x_start
+float64 x_stop
+uint64 x_points
+float64 y_start
+float64 y_stop
+uint64 y_points
+float64 f_start
+float64 f_stop
+uint64 f_points
+---
+bool launched
+string message

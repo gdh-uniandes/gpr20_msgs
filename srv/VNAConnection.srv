@@ -1,0 +1,5 @@
+bool connection # 'true' if attempting to connect to VNA
+                # 'false' if attempting to disconenct from VNA
+string ip_addr  # IP address if a connection attempt is made
+---
+bool status     # Status response from VNA driver

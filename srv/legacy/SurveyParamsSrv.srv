@@ -1,0 +1,14 @@
+string survey_type 	# Survey type string.
+					#	'line': for a line survey
+					#	'grid': for a grid survey
+float32 x_start		# X start coordinate
+float32 y_start		# Y start coordinate
+float32 x_end		# X end coordinate
+float32 y_end		# Y end coordinate
+int16 points 		# Total points for survey
+					# If grid survey, it's equal to points_x * points_y
+					# If line survey, it's the points over the line
+int16 points_x		# Points over X axis. Must be zero if line survey
+int16 points_y		# Points over Y axis. Must be zero if line survey
+---
+bool set 			# Boolean that acknowledges the parameters set
